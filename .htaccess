@@ -1,0 +1,20 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Handle 404 errors
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* error.php/$0 [PT,L]
+
+# Disable directory browsing
+Options -Indexes
+
+# If index.php doesn't exist in the directory, show 403 page
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index\.php !-f
+RewriteRule .* 403.php/$0 [PT,L]

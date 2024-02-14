@@ -1,0 +1,173 @@
+
+.main-wrapper{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /*width: 100%;
+    height: 90vh;
+    display: inline-flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*.quiz-container{
+    background-color: rgb(231, 221, 221);
+    box-shadow: gray 2px 2px 2px;
+}*/
+.quiz-container > div{
+    margin: 20px;
+}
+.each-answer{
+    margin: 10px 0%;
+}
+.prev-next, .jumper-button{
+    padding: 5px 10px;
+    margin: 2px 0%;
+    background-color: blue;
+    color: white;
+    border: white 1px solid;
+    cursor: pointer;
+}
+.active{
+    background-color: white;
+    color : blue;
+    border: blue solid 1px;
+}
+.action-btns button:hover{
+    background-color: white;
+    color : blue;
+    border: blue solid 1px;
+}
+.result-wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result-details{
+    display: inline-flex;
+    justify-content: center;
+}
+.result-details > div{
+    margin: 20px;
+}
+
+
+/**/
+
+/* Styling for the result container */
+.result-container {
+/*  background-color: #ecf0f1;*/
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 900px;
+  text-align: center;
+  overflow: hidden; /* Hide overflow for fireflies */
+  position: relative;
+  z-index: 1;
+  margin: 0 20px;
+}
+
+/* Styling for the circular score display */
+.score-circle {
+    position: relative;
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    border-radius: 50%; /* This creates a circular container */
+    overflow: hidden; /* This hides the parts of the image outside the circle */
+}
+
+#final-score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#final-score .avatar-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* This creates a circular clipping mask for the image */
+}
+#final-score .avatar-xl
+{
+  width: 7.92188rem !important;
+}
+/* Styling for the dashboard section */
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Styling for individual dashboard items */
+.dashboard-item {
+  text-align: center;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.dashboard-item h2 {
+  font-size: 1.1rem !important;
+  font-weight: 400;
+}
+
+/* Styling for the comment section */
+.comment {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #2a2968;
+  font-weight: 600;
+}
+
+/* Styling for the play-again button */
+.play-again-button {
+  background-color: #ffffff73;
+  color: #2980b9;
+  outline: 1px solid #2980b9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: all 0.3s;
+  width: auto !important;
+  margin: 5px;
+}
+
+.play-again-button:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #2a2968;
+  outline: none;
+}
+
+.play-again-button i {
+  transition: transform 0.3s ease-in; /* Add this line for the icon transition */
+}
+
+.play-again-button:hover i {
+  transform: rotate(-270deg); /* Adjust the rotation angle as needed */
+}
+#bodyContainerResult {
+  
+  background-color: #2a2968;
+  
+}
+@keyframes blinkAnimation {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .blink {
+        animation: blinkAnimation 1s infinite;
+    }

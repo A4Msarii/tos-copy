@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Default Sidebar (Classic) | BRIDGE - Admin &amp; Dashboard Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+
+  {% load static %}
+
+  <link rel="preload" href="{% static 'css/theme.min.css' %}" data-hs-appearance="default" as="style">
+  <link rel="preload" href="{% static 'css/theme-dark.min.css' %}" data-hs-appearance="dark" as="style">
+  
+  <style>
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+  
+    .user-card-full {
+      flex: 0 0 auto; /* Each card's width will be determined by its content */
+      margin: 10px;
+      min-width: calc(50% - 20px); /* Adjusts the width to account for margin */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+      border-radius: 10px; /* Optional: rounds the corners of the cards */
+    }
+  
+    /* Ensure the scroller is always shown on desktop browsers */
+    .carousel-container::-webkit-scrollbar {
+      height: 10px;
+    }
+    .carousel-container::-webkit-scrollbar-thumb {
+      background: #cccccc;
+      border-radius: 5px;
+    }
+    .carousel-container::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+    
+    /* Add responsive behavior */
+    @media (max-width: 768px) {
+      .user-card-full {
+        min-width: calc(100% - 20px); /* Full width on smaller screens */
+      }
+    }
+  </style>
+  <style data-hs-appearance-onload-styles>
+    *
+    {
+      transition: unset !important;
+    }
+
+    body
+    {
+      opacity: 0;
+    }
+  </style>
+
+  <script>
+            window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","assets/js/demo.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js","assets/js/demo.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+            window.hs_config.gulpRGBA = (p1) => {
+  const options = p1.split(',')
+  const hex = options[0].toString()
+  const transparent = options[1].toString()
+
+  var c;
+  if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+    c= hex.substring(1).split('');
+    if(c.length== 3){
+      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    }
+    c= '0x'+c.join('');
+    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + transparent + ')';
+  }
+  throw new Error('Bad Hex');
+}
+            window.hs_config.gulpDarken = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = -parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+            window.hs_config.gulpLighten = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+            </script>
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl">
+
+    {% load static %}
+
+    <script src="{% static 'js/hs.theme-appearance.js' %}"></script>
+    
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main" class="main">
+    <!-- Navbar Vertical -->
+    <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
+      <div class="navbar-vertical-container">
+        <div class="navbar-vertical-footer-offset">
+          <!-- Logo -->
+
+          {% load static %}
+
+          <a class="navbar-brand" href="" aria-label="Front">
+            <img class="navbar-brand-logo" src="{% static 'svg/logos/logo.svg' %}" alt="Logo" data-hs-theme-appearance="default">
+            <img class="navbar-brand-logo" src="{% static 'svg/logos-light/logo.svg' %}" alt="Logo" data-hs-theme-appearance="dark">
+            <img class="navbar-brand-logo-mini" src="{% static 'svg/logos/logo-short.svg' %}" alt="Logo" data-hs-theme-appearance="default">
+            <img class="navbar-brand-logo-mini" src="{% static 'svg/logos-light/logo-short.svg' %}" alt="Logo" data-hs-theme-appearance="dark">
+          </a>
+          
+
+          <!-- End Logo -->
+
+          <!-- Navbar Vertical Toggle -->
+          <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
+            <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+            <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          </button>
+
+          <!-- End Navbar Vertical Toggle -->
+
+          <!-- Content -->
+          <div class="navbar-vertical-content">
+            <div id="navbarVerticalMenu" class="nav nav-pills nav-vertical card-navbar-nav">
+              <!-- Collapse -->
+              <div class="nav-item">
+                <a class="nav-link dropdown-toggle active" href="#navbarVerticalMenuDashboards" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuDashboards" aria-expanded="true" aria-controls="navbarVerticalMenuDashboards">
+                  <i class="bi-house-door nav-icon"></i>
+                  <span class="nav-link-title">Dashboards</span>
+                </a>
+
+               
+              </div>
+              <!-- End Collapse -->
+
+              <span class="dropdown-header mt-4">My Space</span>
+              <small class="bi-three-dots nav-subtitle-replacer"></small>
+
+              <!-- Collapse -->
+              <div class="navbar-nav nav-compact">
+
+              </div>
+              <div id="navbarVerticalMenuPagesMenu">
+                <!-- Collapse -->
+                <div class="nav-item">
+                  <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesUsersMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesUsersMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesUsersMenu">
+                    <i class="bi-people nav-icon"></i>
+                    <span class="nav-link-title">Me</span>
+                  </a>
+
+                 
+                </div>
+                <!-- End Collapse -->
+
+                <!-- Collapse -->
+                <div class="nav-item">
+                  <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesUserProfileMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesUserProfileMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesUserProfileMenu">
+                    <i class="bi-person nav-icon"></i>
+                    <span class="nav-link-title">Time Off Requests <span class="badge bg-primary rounded-pill ms-1">5</span></span>
+                  </a>
+
+                  
+                <!-- End Collapse -->
+
+                <!-- Collapse -->
+                <div class="nav-item">
+                  <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesAccountMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesAccountMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesAccountMenu">
+                    <i class="bi-person-badge nav-icon"></i>
+                    <span class="nav-link-title">My Goals</span>
+                  </a>
+
+               
+
+              <span class="dropdown-header mt-4">Our Space</span>
+              <small class="bi-three-dots nav-subtitle-replacer"></small>
+
+              <div class="nav-item">
+                <a class="nav-link " href="" data-placement="left">
+                  <i class="bi-kanban nav-icon"></i>
+                  <span class="nav-link-title">Crew Data</span>
+                </a>
+              </div>
+
+              <div class="nav-item">
+                <a class="nav-link " href="" data-placement="left">
+                  <i class="bi-calendar-week nav-icon"></i>
+                  <span class="nav-link-title">Praise Wall</span>
+                </a>
+              </div>
+
+              <div class="nav-item">
+                <a class="nav-link " href="" data-placement="left">
+                  <i class="bi-receipt nav-icon"></i>
+                  <span class="nav-link-title">Calender</span>
+                </a>
+              </div>
+
+              
+
+              
+
+              
+
+          </div>
+          <!-- End Content -->
+
+          <!-- Footer -->
+          <div class="navbar-vertical-footer">
+            <ul class="navbar-vertical-footer-list">
+              <li class="navbar-vertical-footer-list-item">
+                <!-- Style Switcher -->
+                <div class="dropdown dropup">
+                  <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="selectThemeDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
+
+                  </button>
+
+                  <div class="dropdown-menu navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectThemeDropdown">
+                    <a class="dropdown-item" href="#" data-icon="bi-moon-stars" data-value="auto">
+                      <i class="bi-moon-stars me-2"></i>
+                      <span class="text-truncate" title="Auto (system default)">Auto (system default)</span>
+                    </a>
+                    <a class="dropdown-item" href="#" data-icon="bi-brightness-high" data-value="default">
+                      <i class="bi-brightness-high me-2"></i>
+                      <span class="text-truncate" title="Default (light mode)">Default (light mode)</span>
+                    </a>
+                    <a class="dropdown-item active" href="#" data-icon="bi-moon" data-value="dark">
+                      <i class="bi-moon me-2"></i>
+                      <span class="text-truncate" title="Dark">Dark</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- End Style Switcher -->
+              </li>
+
+
+            </ul>
+          </div>
+          <!-- End Footer -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- End Navbar Vertical -->
+
+    <!-- Content -->
+    <div class="content container">
+      <!-- Navbar Vertical Toggle -->
+      
+      <!-- End Navbar Vertical Toggle -->
+
+      <div class="row justify-content-lg-center pt-lg-5 pt-xl-10">
+        <div class="col-lg-9">
+          <!-- Title -->
+          <div class="container-fluid">
+            <div class="page-content page-container" id="page-content">
+              <div class="padding">
+                <button id="scrollLeft" class="scroll-btn">&lt;</button>
+                <div class="carousel-container">
+                  {% for user in users %}
+                    <div class="user-card-full">
+                      <div class="card">
+                        <div class="row m-l-0 m-r-0">
+                          <div class="col-sm-4 bg-c-lite-green user-profile">
+                            <div class="card-block text-center text-white">
+                              <div class="m-b-25">
+                                <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="card-block">
+                              <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Name</p>
+                                  <h6 class="text-muted f-w-400">{{ user.name }}</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Email</p>
+                                  <h6 class="text-muted f-w-400">{{ user.email }}</h6>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Designation</p>
+                                  <h6 class="text-muted f-w-400">{{ user.designation }}</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Team</p>
+                                  <h6 class="text-muted f-w-400">{{ user.team }}</h6>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">City, Country</p>
+                                  <h6 class="text-muted f-w-400">{{ user.city_country }}</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Phone</p>
+                                  <h6 class="text-muted f-w-400">{{ user.phone }}</h6>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p class="m-b-10 f-w-600">Reporting Manager</p>
+                                  <h6 class="text-muted f-w-400">{{ user.manager }}</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                  <!-- Additional Details or Space for Future Use -->
+                                </div>
+                              </div>
+                              <a href="{% url 'user_detail' user.id %}" class="btn btn-primary">View Details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                  
+                </div>
+                <button id="scrollRight" class="scroll-btn">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- End Title -->
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Welcome Message -->
+  <div class="modal fade" id="welcomeMessageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi-x-lg"></i>
+          </button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <!-- <div class="modal-body p-sm-5">
+          <div class="text-center">
+            <div class="w-75 w-sm-50 mx-auto mb-4">
+              <img class="img-fluid" src="../assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="img-fluid" src="../assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
+            </div>
+
+            <h4 class="h1">Welcome to Front</h4>
+
+            <p>We're happy to see you in our community.</p>
+          </div>
+        </div> -->
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <!-- <div class="modal-footer d-block text-center py-sm-5">
+          <small class="text-cap text-muted">Trusted by the world's best teams</small>
+
+          <div class="w-85 mx-auto">
+            <div class="row justify-content-between">
+              <div class="col">
+                <img class="img-fluid" src="../assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="../assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="../assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="../assets/svg/brands/layar-gray.svg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+
+  <!-- End Welcome Message -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  
+
+<script src="{% static 'vendor/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<!-- JS Implementing Plugins -->
+<script src="{% static 'vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside.min.js' %}"></script>
+<!-- JS Front -->
+<script src="{% static 'js/theme.min.js' %}"></script>
+
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      
+
+      // INITIALIZATION OF NAVBAR VERTICAL ASIDE
+      // =======================================================
+      new HSSideNav('.js-navbar-vertical-aside').init()
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+    })()
+  </script>
+
+  <!-- Style Switcher JS -->
+
+  <script>
+      (function () {
+        // STYLE SWITCHER
+        // =======================================================
+        const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
+        const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
+
+        // Function to set active style in the dorpdown menu and set icon for dropdown trigger
+        const setActiveStyle = function () {
+          $variants.forEach($item => {
+            if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
+              $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
+              return $item.classList.add('active')
+            }
+
+            $item.classList.remove('active')
+          })
+        }
+
+        // Add a click event to all items of the dropdown to set the style
+        $variants.forEach(function ($item) {
+          $item.addEventListener('click', function () {
+            HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
+          })
+        })
+
+        // Call the setActiveStyle on load page
+        setActiveStyle()
+
+        // Add event listener on change style to call the setActiveStyle function
+        window.addEventListener('on-hs-appearance-change', function () {
+          setActiveStyle()
+        })
+      })()
+      document.getElementById('scrollLeft').addEventListener('click', function() {
+  document.querySelector('.carousel-container').scrollBy({
+    left: -300, // This value can be adjusted based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
+document.getElementById('scrollRight').addEventListener('click', function() {
+  document.querySelector('.carousel-container').scrollBy({
+    left: 300, // This value can be adjusted based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
+    </script>
+
+  
+</body>
+</html>

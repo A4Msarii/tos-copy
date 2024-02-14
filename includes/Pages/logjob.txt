@@ -1,0 +1,33 @@
+2023-12-01 23:57:30,616 - Raw request data: {"export_path":"","schedule_frequency":"daily","scheduled_datetime":"23:59"}
+2023-12-01 23:57:30,658 - Received Task - Export Path: , Schedule Frequency: daily, Scheduled Datetime: 23:59
+2023-12-01 23:58:04,503 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\dddd.sql","schedule_frequency":"weekly","scheduled_datetime":"2023-12-02 00:02"}
+2023-12-01 23:58:04,503 - Received Task - Export Path: C:\Users\vishnu\Downloads\dddd.sql, Schedule Frequency: weekly, Scheduled Datetime: 2023-12-02 00:02
+2023-12-01 23:59:00,768 - Executing run_task function
+2023-12-01 23:59:01,783 - Error executing task (Exit Code 1): Command '['C:\\xampp\\mysql\\bin\\mysqldump.exe', '-h', 'localhost', '-u', 'root', 'grade sheet', '--result-file=']' returned non-zero exit status 1.
+2023-12-02 00:02:00,311 - Executing run_task function
+2023-12-02 00:02:08,545 - Completed Task - Export Path: C:\Users\vishnu\Downloads\dddd.sql
+2023-12-02 00:03:37,823 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\suma.sql","schedule_frequency":"weekly","scheduled_datetime":"2023-12-02 00:05"}
+2023-12-02 00:03:37,824 - Received Task - Export Path: C:\Users\vishnu\Downloads\suma.sql, Schedule Frequency: weekly, Scheduled Datetime: 2023-12-02 00:05
+2023-12-02 00:05:00,306 - Executing run_task function
+2023-12-02 00:05:09,286 - Completed Task - Export Path: C:\Users\vishnu\Downloads\suma.sql
+2023-12-02 12:16:42,407 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\amogh.sql","schedule_frequency":"daily","scheduled_datetime":"12:19"}
+2023-12-02 12:16:42,414 - Received Task - Export Path: C:\Users\vishnu\Downloads\amogh.sql, Schedule Frequency: daily, Scheduled Datetime: 12:19
+2023-12-02 12:17:11,183 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\hrishi.sql","schedule_frequency":"daily","scheduled_datetime":"12:21"}
+2023-12-02 12:17:11,185 - Received Task - Export Path: C:\Users\vishnu\Downloads\hrishi.sql, Schedule Frequency: daily, Scheduled Datetime: 12:21
+2023-12-02 12:19:00,475 - Executing run_task function
+2023-12-02 12:19:18,786 - Completed Task - Export Path: C:\Users\vishnu\Downloads\amogh.sql
+2023-12-02 12:21:00,731 - Executing run_task function
+2023-12-02 12:21:14,179 - Completed Task - Export Path: C:\Users\vishnu\Downloads\hrishi.sql
+2023-12-04 08:37:17,776 - Executing run_task function
+2023-12-04 08:38:38,799 - Error executing task (Exit Code 1): Command '['C:\\xampp\\mysql\\bin\\mysqldump.exe', '-h', 'localhost', '-u', 'root', 'grade sheet', '--result-file=']' returned non-zero exit status 1.
+2023-12-04 08:38:41,848 - Executing run_task function
+2023-12-04 08:40:56,295 - Completed Task - Export Path: C:\Users\vishnu\Downloads\amogh.sql
+2023-12-04 08:40:56,307 - Executing run_task function
+2023-12-04 08:41:24,398 - Completed Task - Export Path: C:\Users\vishnu\Downloads\hrishi.sql
+2023-12-04 12:19:40,755 - Executing run_task function
+2023-12-04 12:27:51,595 - Completed Task - Export Path: C:\Users\vishnu\Downloads\amogh.sql
+2023-12-04 12:27:52,605 - Executing run_task function
+2023-12-04 13:56:55,719 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\varun.sql","schedule_frequency":"daily","scheduled_datetime":"13:58"}
+2023-12-04 13:56:55,830 - Received Task - Export Path: C:\Users\vishnu\Downloads\varun.sql, Schedule Frequency: daily, Scheduled Datetime: 13:58
+2023-12-04 13:58:00,301 - Executing run_task function
+2023-12-04 13:58:47,845 - Completed Task - Export Path: C:\Users\vishnu\Downloads\varun.sql

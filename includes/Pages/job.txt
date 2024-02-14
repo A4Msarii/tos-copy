@@ -1,0 +1,200 @@
+2024-01-30 17:23:47,911 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-30 17:23:47,923 - Raw request data: 
+2024-01-30 17:23:47,924 - Error receiving task: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-01-30 17:28:07,259 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-30 17:28:07,262 - Raw request data: 
+2024-01-30 17:28:07,264 - Error receiving task: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-01-30 17:34:08,728 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-30 17:34:08,730 - Raw request data: 
+2024-01-30 17:34:08,732 - Error receiving task: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-01-30 17:34:28,389 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Content-Length: 121
+Sec-Ch-Ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-30 17:34:28,392 - Raw request data: {"export_path":"D:\\xampp\\htdocs\\latest\\TOS/gradesheet.sql","schedule_frequency":"daily","scheduled_datetime":"11:22"}
+2024-01-30 17:34:28,441 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql, Schedule Frequency: daily, Scheduled Datetime: 11:22
+2024-01-30 17:35:13,820 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Content-Length: 121
+Sec-Ch-Ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-30 17:35:13,821 - Raw request data: {"export_path":"D:\\xampp\\htdocs\\latest\\TOS/gradesheet.sql","schedule_frequency":"daily","scheduled_datetime":"17:37"}
+2024-01-30 17:35:13,823 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql, Schedule Frequency: daily, Scheduled Datetime: 17:37
+2024-01-30 17:37:00,951 - Executing run_task function
+2024-01-30 17:37:07,849 - Completed Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql
+2024-01-31 09:48:44,374 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-31 09:48:44,385 - Raw request data: 
+2024-01-31 09:48:44,386 - Error receiving task: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-01-31 09:49:05,580 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Content-Length: 121
+Sec-Ch-Ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-31 09:49:05,581 - Raw request data: {"export_path":"D:\\xampp\\htdocs\\latest\\TOS/gradesheet.sql","schedule_frequency":"daily","scheduled_datetime":"10:15"}
+2024-01-31 09:49:05,587 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql, Schedule Frequency: daily, Scheduled Datetime: 10:15
+2024-01-31 09:49:32,549 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Content-Length: 134
+Sec-Ch-Ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-31 09:49:32,552 - Raw request data: {"export_path":"D:\\xampp\\htdocs\\latest\\TOS\\includes\\Pages\\varun.sql","schedule_frequency":"daily","scheduled_datetime":"10:45"}
+2024-01-31 09:49:32,555 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS\includes\Pages\varun.sql, Schedule Frequency: daily, Scheduled Datetime: 10:45
+2024-01-31 10:00:27,103 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-31 10:00:27,105 - Raw request data: 
+2024-01-31 10:00:27,106 - Error receiving task: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-01-31 10:01:05,479 - Request Headers: Host: 192.168.199.56:8000
+Connection: keep-alive
+Content-Length: 121
+Sec-Ch-Ua: "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2024-01-31 10:01:05,483 - Raw request data: {"export_path":"D:\\xampp\\htdocs\\latest\\TOS/gradesheet.sql","schedule_frequency":"daily","scheduled_datetime":"10:23"}
+2024-01-31 10:01:05,487 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql, Schedule Frequency: daily, Scheduled Datetime: 10:23
+2024-01-31 10:23:00,022 - Executing run_task function
+2024-01-31 10:23:05,645 - Completed Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql
+2024-01-31 11:28:01,569 - Received Task - Export Path: D:\xampp\htdocs\latest\TOS/gradesheet.sql, Schedule Frequency: daily, Scheduled Datetime: 11:29

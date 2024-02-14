@@ -1,0 +1,35 @@
+<?php
+include('../../includes/config.php');
+include(ROOT_PATH.'includes/connect.php');
+session_start();
+echo $ctp=$_POST['ctp'];
+echo $id=$_POST['id'];
+$p_name=$_POST['p_name'];
+$objective=$_POST['objective'];
+if(isset($_POST["objective"])){
+    if($id!=""){
+        $que_phase = "SELECT phasename FROM phase where phasename='$p_name' and ctp='$ctp'";
+							$stat_phase = $connect->prepare($que_phase);
+						    $stat_phase->execute();
+							
+							if($stat_phase->rowCount() == 0)
+						    {
+             $query="UPDATE `phase`
+            SET `phasename` = '$phase_name',`objective`='$objective',
+            WHERE `id`='$id'";
+            $statement = $connect->prepare($query);
+            $statement->execute();
+            $_SESSION['success'] = "Data Updated Successfully";
+            header('Location:Next-home.php');
+            }else{
+                
+                $_SESSION['warning'] = "Phase Name Already Exist";
+                header('Location:Next-home.php');
+             }
+        }else{
+    
+    $_SESSION['warning'] = "Phase Name Is Missing";
+    header('Location:Next-home.php');
+ }
+}
+?>

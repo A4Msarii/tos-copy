@@ -1,0 +1,112 @@
+Medicinal Plant Cultivation Basics,,,10 Actual Classes,,10 Academic Classes,
+Title,Details,,Actual Class Name,Symbol,Academic Class Name,Symbol
+CTP Name,Pest and Disease Management Strategies CTP,,Introduction to Plant Pests and Diseases,PDMS1-A1,Principles of Integrated Pest Management,PDMS1-D1
+Course Code,PDMS1,,Common Pesticides and Their Uses,PDMS1-A2,Understanding Plant Diseases,PDMS1-D2
+Type of Course,Workshop Course,,Pest Identification Techniques,PDMS1-A3,Pest Life Cycles and Behavior,PDMS1-D3
+Sponsor,GreenCare Solutions,,Disease Management Strategies,PDMS1-A4,Pesticide Chemistry and Modes of Action,PDMS1-D4
+Location,"Mumbai, Maharashtra",,Integrated Pest Management Plans,PDMS1-A5,Environmental Impact of Pest Management,PDMS1-D5
+Course Aim,Learn effective strategies for managing pests and diseases in plants.,,Advanced Pesticide Application Techniques,PDMS1-A6,Plant Health and Pathology,PDMS1-D6
+Class Size,12,,Biocontrol Agents for Pest Management,PDMS1-A7,Pest Resistance and Adaptation,PDMS1-D7
+Equipment/Vehicle Category,Tools and Equipment,,Preventing Disease Outbreaks,PDMS1-A8,Economic Impacts of Pest and Disease,PDMS1-D8
+Equipment/Vehicle Name,Sprayer,,Sustainable Pest and Disease Management,PDMS1-A9,Integrated Pest and Disease Management Plans,PDMS1-D9
+Course Duration,40 days,,Monitoring and Evaluating Control Measures,PDMS1-A10,Advanced Topics in Plant Care,PDMS1-D10
+Course Description,"Gain practical knowledge in identifying, preventing, and treating plant pests and diseases.",,10 Sim Classes,,10 Tests ,
+Learning Goals,1. Understand common plant pests and diseases. <br> 2. Learn integrated pest management techniques. <br> 3. Develop skills in pesticide application.,,Sim Class Name,Symbol,Tests,Symbol
+Equipement Spot,Store room,,Virtual Pest Identification Lab,PDMS1-S1,Introduction to Pest and Disease Management - Test 1,PDMS1-T1
+Color Code,#f39c12,,Interactive Disease Diagnosis Scenario,PDMS1-S2,Common Pests and Diseases - Test 1,PDMS1-T2
+,,,Pest Management Strategy Simulation,PDMS1-S3,Principles of Integrated Pest Management - Test 1,PDMS1-T3
+5 Phases,,,Virtual Pesticide Application Practice,PDMS1-S4,Understanding Plant Diseases - Test 1,PDMS1-T4
+Phase Names,Objectives,Duration ,Disease Outbreak Simulation,PDMS1-S5,Pest Identification Techniques - Test 1,PDMS1-T5
+Introduction to Pest and Disease Management,Understand the basics of plant pests and diseases. - Learn to identify common pests and diseases. - Introduce integrated pest management principles.,8 Days,Pest Control Decision-making Scenario,PDMS1-S6,Pesticide Chemistry and Modes of Action - Test 1,PDMS1-T6
+Fundamentals of Pest Control Methods,Explore various methods of pest control. - Understand pesticide application techniques. - Practice safe pesticide usage.,8 Days,Plant Disease Management Simulation,PDMS1-S7,Pest Life Cycles and Behavior - Test 1,PDMS1-T7
+Advanced Pest Management Strategies,Learn about biological pest control methods. - Study pest-resistant plant varieties. - Develop integrated pest management plans.,8 Days,Integrated Pest Management Virtual Exercise,PDMS1-S8,Plant Health and Pathology - Test 1,PDMS1-T8
+Disease Identification and Management,Identify common plant diseases and their symptoms. - Study disease prevention and management strategies. - Implement disease control measures.,8 Days,Pest Scenarios Analysis,PDMS1-S9,Pest Resistance and Adaptation - Test 1,PDMS1-T9
+Integrated Pest and Disease Management,Integrate pest and disease management strategies for sustainable plant care. - Develop customized management plans. - Evaluate the effectiveness of control measures.,8 Days,Disease Management Challenge,PDMS1-S10,Environmental Impact of Pest Management - Test 1,PDMS1-T10
+,,,,,,
+,,,,,,
+Item & Sub-items,,,,,,
+Item No,Item Name,Associated Class,Sub-Item No.,Sub-Item Name,Associated Item,
+1,Aphid Infestation Guide,Introduction to Plant Pests and Diseases,1,Basics,Aphid Infestation Guide,
+2,Insecticide Overview,Common Pesticides and Their Uses,2,Overview,Insecticide Overview,
+3,Field Guide to Pest Identification,Pest Identification Techniques,3,Guide,Field Guide to Pest Identification,
+4,Fungal Disease Management Strategies,Disease Management Strategies,4,Strategies,Fungal Disease Management Strategies,
+5,Comprehensive IPM Plan Template,Integrated Pest Management Plans,5,Template,Comprehensive IPM Plan Template,
+6,Precision Pesticide Application Workshop,Advanced Pesticide Application Techniques,6,Workshop,Precision Pesticide Application Workshop,
+7,Beneficial Insects Handbook,Biocontrol Agents for Pest Management,7,Handbook,Beneficial Insects Handbook,
+8,Disease Prevention in Crop Rotation,Preventing Disease Outbreaks,8,Prevention,Disease Prevention in Crop Rotation,
+9,Eco-Friendly Pest Management Techniques,Sustainable Pest and Disease Management,9,Techniques,Eco-Friendly Pest Management Techniques,
+10,Monitoring Tools for Pest Control,Monitoring and Evaluating Control Measures,10,Tools,Monitoring Tools for Pest Control,
+11,Nematode Control Strategies,Integrated Pest Management Plans,11,Nematode,Nematode Control Strategies,
+12,Organic Disease Management Handbook,Disease Management Strategies,12,Organic,Organic Disease Management Handbook,
+13,Virtual Pest Identification Lab,Virtual Pest Identification Lab,13,Virtual Lab,Virtual Pest Identification Lab,
+14,Interactive Disease Diagnosis Scenario,Interactive Disease Diagnosis Scenario,14,Interactive,Interactive Disease Diagnosis Scenario,
+15,Pest Management Strategy Simulation,Pest Management Strategy Simulation,15,Simulation,Pest Management Strategy Simulation,
+16,Virtual Pesticide Application Practice,Virtual Pesticide Application Practice,16,Virtual,Virtual Pesticide Application Practice,
+17,Disease Outbreak Simulation,Disease Outbreak Simulation,17,Outbreak,Disease Outbreak Simulation,
+18,Pest Control Decision-making Scenario,Pest Control Decision-making Scenario,18,Decision,Pest Control Decision-making Scenario,
+19,Plant Disease Management Simulation,Plant Disease Management Simulation,19,Management,Plant Disease Management Simulation,
+20,Integrated Pest Management Virtual Exercise,Integrated Pest Management Virtual Exercise,20,Integrated,Integrated Pest Management Virtual Exercise,
+21,Pest Scenarios Analysis,Pest Scenarios Analysis,21,Scenarios,Pest Scenarios Analysis,
+22,Disease Management Challenge,Disease Management Challenge,22,Challenge,Disease Management Challenge,
+23,Pest and Disease Response Simulation,Disease Outbreak Simulation,23,Response,Pest and Disease Response Simulation,
+24,Advanced IPM Strategy Simulation,Integrated Pest Management Virtual Exercise,24,Advanced,Advanced IPM Strategy Simulation,
+25,IPM Framework and Key Concepts,Principles of Integrated Pest Management,25,Framework,IPM Framework and Key Concepts,
+26,Fungal Pathogens: Identification and Control,Understanding Plant Diseases,26,Pathogens,Fungal Pathogens: Identification and Control,
+27,Insect Life Cycles and Behavior,Pest Life Cycles and Behavior,27,Behavior,Insect Life Cycles and Behavior,
+28,Pesticide Chemistry: Modes and Applications,Pesticide Chemistry and Modes of Action,28,Chemistry,Pesticide Chemistry: Modes and Applications,
+29,Ecological Consequences of Pest Management,Environmental Impact of Pest Management,29,Consequences,Ecological Consequences of Pest Management,
+30,Plant Pathology Fundamentals,Plant Health and Pathology,30,Fundamentals,Plant Pathology Fundamentals,
+31,Pest Adaptation and Management Strategies,Pest Resistance and Adaptation,31,Adaptation,Pest Adaptation and Management Strategies,
+32,Economic Analysis of Pest and Disease Impacts,Economic Impacts of Pest and Disease,32,Analysis,Economic Analysis of Pest and Disease Impacts,
+33,IPM Plan Development and Implementation,Integrated Pest and Disease Management Plans,33,Implementation,IPM Plan Development and Implementation,
+34,Advanced Disease Detection Techniques,Understanding Plant Diseases,34,Detection,Advanced Disease Detection Techniques,
+35,Pest Control Strategies in Changing Climates,Environmental Impact of Pest Management,35,Changing,Pest Control Strategies in Changing Climates,
+36,Innovative Approaches to Plant Care,Advanced Topics in Plant Care,36,Innovative,Innovative Approaches to Plant Care,
+37,Introduction to Pest and Disease Management,Introduction to Pest and Disease Management - Test 1,37,Introduction,Introduction to Pest and Disease Management,
+38,Common Pests and Diseases,Common Pests and Diseases - Test 1,38,Common,Common Pests and Diseases,
+39,Key Concepts in IPM,Principles of Integrated Pest Management - Test 1,39,Concepts,Key Concepts in IPM,
+40,Plant Disease Fundamentals,Understanding Plant Diseases - Test 1,40,Fundamentals,Plant Disease Fundamentals,
+41,Pest Identification Methods,Pest Identification Techniques - Test 1,41,Identification,Pest Identification Methods,
+42,Pesticides and Their Mechanisms,Pesticide Chemistry and Modes of Action - Test 1,42,Mechanisms,Pesticides and Their Mechanisms,
+43,Insect Behavior and Life Cycles,Pest Life Cycles and Behavior - Test 1,43,Behavior,Insect Behavior and Life Cycles,
+44,Plant Health and Pathological Processes,Plant Health and Pathology - Test 1,44,Processes,Plant Health and Pathological Processes,
+45,Evolution of Pest Resistance,Pest Resistance and Adaptation - Test 1,45,Resistance,Evolution of Pest Resistance,
+46,Environmental Consequences of Pest Management,Environmental Impact of Pest Management - Test 1,46,Environmental,Environmental Consequences of Pest Management,
+47,,,,,,
+48,,,,,,
+49,,,,,,
+50,,,,,,
+51,,,,,,
+52,,,,,,
+53,,,,,,
+54,,,,,,
+55,,,,,,
+56,,,,,,
+57,,,,,,
+58,,,,,,
+59,,,,,,
+60,,,,,,
+61,,,,,,
+62,,,,,,
+63,,,,,,
+64,,,,,,
+65,,,,,,
+66,,,,,,
+67,,,,,,
+68,,,,,,
+69,,,,,,
+70,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

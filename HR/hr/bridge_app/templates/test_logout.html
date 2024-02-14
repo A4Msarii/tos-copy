@@ -1,0 +1,12 @@
+<!-- test_logout.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Logout</title>
+</head>
+<body>
+    <h1>Welcome, {{ request.user.username }}!</h1>
+    <p>This page should only be accessible if you're logged in.</p>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>

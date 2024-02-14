@@ -1,0 +1,268 @@
+
+  #itemtable1 tr td {
+    padding: 0 !important;
+    margin: 0 !important;
+
+  }
+
+  #itemtable2 tr td {
+    padding: 0 !important;
+    margin: 0 !important;
+
+  }
+
+  #itemtable3 tr td {
+    padding: 0 !important;
+    margin: 0 !important;
+
+  }
+
+  button.badge.append_data1 {
+    padding: 0px;
+    margin: 3px;
+    border: 2px solid #808080a8;
+  }
+
+  button.badge.append_data1:hover {
+    background-color: #827c7c87;
+    color: black;
+    cursor: pointer;
+  }
+
+  button.badge.info {
+    padding: 0px;
+    margin: 3px;
+    border: 2px solid #808080a8;
+  }
+
+  button.badge.info:hover {
+    background-color: #827c7c87;
+    color: black;
+    cursor: pointer;
+
+  }
+
+   /*button.badge.additional {
+    padding: 0px;
+    margin: 3px;
+    border: 2px solid #808080a8;
+  }
+
+  button.badge.additional:hover {
+    background-color: #827c7c87;
+    color: black;
+    cursor: pointer;
+
+  }*/
+
+  button.badge.send {
+    padding: 0px;
+    margin: 3px;
+    border: 2px solid #808080a8;
+  }
+  button.badge.crossbtn {
+    margin: 3px;
+    padding: 0px;
+    border: 2px solid #808080a8;
+}
+
+  button.badge.send:hover {
+    background-color: #827c7c87;
+    color: black;
+    cursor: pointer;
+
+  }
+  #anch
+  {
+    color: black;
+  }
+  button.badge.crossbtn:hover
+  {
+    background-color: #827c7c87;
+    color: red;
+    cursor: pointer;
+  }
+  i.bi-x
+  {
+    color: black;
+  }
+  i.bi-x:hover {
+    color: red;
+  }
+  i.bi-exclamation {
+    color: black;
+  }
+
+  i.bi-exclamation:hover {
+    color: red;
+  }
+  i.bi-plus-circle {
+    color: black;
+  }
+
+  i.bi-plus-circle:hover {
+    color: red;
+  }
+  i.bi-arrow-right-short {
+    color: black;
+  }
+
+  i.bi-arrow-right-short:hover {
+    color: blue;
+  }
+
+  .tooldata {
+    display: none !important;
+    position: absolute;
+    left: 50px;
+    top: -25px;
+    background-color: black;
+    color: white;
+    width: auto;
+    font-size: 15px !important;
+    font-weight: normal;
+    z-index: 99px !important;
+  }
+
+  .tooldata::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: black;
+    position: absolute;
+    bottom: -4px;
+
+    transform: rotate(45deg);
+  }
+
+  .custom-popover:hover .tooldata {
+    display: block !important;
+  }
+
+  .text-container {
+    background-color: #ffffff;
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .button {
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    outline: none;
+    color: black;
+  }
+
+  .select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+  }
+
+  .options label,
+  .options .select {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 30px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+
+  #contentt {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .active {
+    background-color: #e0e9ff;
+  }
+
+  .modal-xl {
+    max-width: 1700px !important;
+  }
+
+  button.btncolor {
+    background-color: #9ba9bacf;
+/*    font-weight: bold;*/
+
+    border: aliceblue;
+    color: black;
+
+  }
+  button#additional_training:hover
+  {
+    background-color: #00c9a7 !important;
+    color: white;
+
+  }
+  button#Unaccomplish_but:hover
+  {
+    background-color: #2f6ad9 !important;
+    color: white;
+  }
+  button#clearancelogbtn:hover
+  {
+    background-color: #ed4c78 !important;
+    color: white;
+  }
+  button#desclogbtn:hover
+  {
+    background-color: #09a5be !important;
+    color: white;
+  }
+  button#memologbtn:hover
+  {
+    background-color: #eb9c42 !important;
+    color: white;
+  }
+  button#selectLanguageDropdown2:hover
+  {
+    background-color: #33b4b4 !important;
+    color: white;
+  }
+  button#selectattchment:hover
+  {
+    background-color: #b9c711 !important;
+    color: white;
+  }
+  button#selectLanguageDropdown1:hover
+  {
+    background-color: #566c84 !important;
+    color: white;
+  }
+  

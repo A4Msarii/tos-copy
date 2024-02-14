@@ -1,0 +1,64 @@
+2023-12-01 23:30:46,771 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\pp.sql","schedule_frequency":"daily","scheduled_datetime":"23:45"}
+2023-12-01 23:30:46,771 - Exception on /receive_task [POST]
+Traceback (most recent call last):
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\xampp\htdocs\latest\TOS\includes\Pages\receive_task.py", line 52, in receive_task
+    export_path = task_data.get('export_path')
+NameError: name 'task_data' is not defined
+2023-12-01 23:30:54,597 - Raw request data: 
+2023-12-01 23:30:54,601 - Exception on /receive_task [GET]
+Traceback (most recent call last):
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\xampp\htdocs\latest\TOS\includes\Pages\receive_task.py", line 52, in receive_task
+    export_path = task_data.get('export_path')
+NameError: name 'task_data' is not defined
+2023-12-01 23:37:47,000 - Raw request data: 
+2023-12-01 23:37:47,000 - Exception on /receive_task [GET]
+Traceback (most recent call last):
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\xampp\htdocs\latest\TOS\includes\Pages\receive_task.py", line 52, in receive_task
+    task_data = request.get_json()  # Define task_data for POST requests
+NameError: name 'task_data' is not defined
+2023-12-01 23:38:12,035 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\dd.sql","schedule_frequency":"weekly","scheduled_datetime":"2023-12-07 04:04"}
+2023-12-01 23:38:12,035 - Exception on /receive_task [POST]
+Traceback (most recent call last):
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vishnu\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\xampp\htdocs\latest\TOS\includes\Pages\receive_task.py", line 52, in receive_task
+    task_data = request.get_json()  # Define task_data for POST requests
+NameError: name 'task_data' is not defined

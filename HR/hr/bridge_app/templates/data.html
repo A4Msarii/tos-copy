@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <!-- <style data-hs-appearance-onload-styles>
+        *
+        {
+          transition: unset !important;
+        }
+    
+        body
+        {
+          opacity: 0;
+        }
+        .padding {
+        padding: 3rem !important
+    }
+    
+    .user-card-full {
+        overflow: hidden;
+    }
+    
+    .card {
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+        box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+        border: none;
+        margin-bottom: 30px;
+    }
+    
+    .m-r-0 {
+        margin-right: 0px;
+    }
+    
+    .m-l-0 {
+        margin-left: 0px;
+    }
+    
+    .user-card-full .user-profile {
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .user-profile {
+        padding: 20px 0;
+    }
+    
+    .card-block {
+        padding: 1.25rem;
+    }
+    
+    .m-b-25 {
+        margin-bottom: 25px;
+    }
+    
+    .img-radius {
+        border-radius: 5px;
+    }
+    
+    
+     
+    h6 {
+        font-size: 14px;
+    }
+    
+    .card .card-block p {
+        line-height: 25px;
+    }
+    
+    @media only screen and (min-width: 1400px){
+    p {
+        font-size: 14px;
+    }
+    }
+    
+    .card-block {
+        padding: 1.25rem;
+    }
+    
+    .b-b-default {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .m-b-20 {
+        margin-bottom: 20px;
+    }
+    
+    .p-b-5 {
+        padding-bottom: 5px !important;
+    }
+    
+    .card .card-block p {
+        line-height: 25px;
+    }
+    
+    .m-b-10 {
+        margin-bottom: 10px;
+    }
+    
+    .text-muted {
+        color: #919aa3 !important;
+    }
+    
+    .b-b-default {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .f-w-600 {
+        font-weight: 600;
+    }
+    
+    .m-b-20 {
+        margin-bottom: 20px;
+    }
+    
+    .m-t-40 {
+        margin-top: 20px;
+    }
+    
+    .p-b-5 {
+        padding-bottom: 5px !important;
+    }
+    
+    .m-b-10 {
+        margin-bottom: 10px;
+    }
+    
+    .m-t-40 {
+        margin-top: 20px;
+    }
+    
+    .user-card-full .social-link li {
+        display: inline-block;
+    }
+    
+    .user-card-full .social-link li a {
+        font-size: 20px;
+        margin: 0 10px 0 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+      </style>
+     -->
+    
+</head>
+<body>
+    <div>
+        <div class="content container-fluid" style="height: 30rem;">
+            <h1 class="text-primary" style="margin:5px;">Crew Data - Admin Panel</h1>
+          </div>
+          <!-- End Page Header -->
+        </div>
+  
+      <!-- Content -->
+      <div class="content container-fluid" style="margin-top: -27rem;">
+  
+          <div class="row">
+            <div class="col-lg-12 col-lg-3 mb-3 mb-lg-5">
+                <div class="card card-hover-shadow h-100" style="border:0.001rem solid #dddddd;">
+
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;" for="employeeNameInput">Employee Name :</label>
+                            <input type="text" id="employeeNameInput" name="employeeNameInput" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;" for="employeeIdInput">Employee Id :</label>
+                            <input type="text" id="employeeIdInput" name="employeeIdInput" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;" for="designationInput">Designation :</label>
+                            <input type="text" id="designationInput" name="designationInput" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;" for="emailIdInput">Email Id :</label>
+                            <input type="email" id="emailIdInput" name="emailIdInput" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;" for="phoneNoInput">Phone No :</label>
+                            <input type="number" id="phoneNoInput" name="phoneNoInput" class="form-control">
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;">Reporting Manager : </label>
+                            <select class="form-select" title="Select your reporting manager">
+                                <option value="">Select Manager</option>
+                                <option value="Ayushi">Ayushi</option>
+                                <option value="Archana">Archana</option>
+                                <option value="Varun">Varun</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <label class="text-dark" style="font-weight:bold;">Projects : </label>
+                            <select class="form-select" title="Select your project">
+                                <option value="">Select Project</option>
+                                <option value="Project 1">Project 1</option>
+                                <option value="Project 2">Project 2</option>
+                                <option value="Project 3">Project 3</option>
+                            </select>
+                        </div>
+                        
+                      <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Nationality :</label>
+                        <input type="text" name="nationalityInput" class="form-control" title="Enter your nationality" placeholder="E.g., American, Indian, etc.">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Gender : </label>
+                        <select class="form-select" title="Select your gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Country : </label>
+                        <select class="form-select" title="Select your country">
+                            <option value="">Select Country</option>
+                            <option value="UAE - Dubai">UAE - Dubai</option>
+                            <option value="US - America">US - America</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                    
+                      <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">City :</label>
+                        <input type="text" name="cityInput" class="form-control" title="City" placeholder="Enter City">
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Address :</label>
+                        <input type="text" name="addressInput" class="form-control" title="Enter your address" placeholder="E.g., 123 Main Street, Apt 4B">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Landmark :</label>
+                        <input type="text" name="landmarkInput" class="form-control" title="landmark" placeholder="Enter Landmark">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Birthday :</label>
+                        <input type="date" name="birthdayInput" class="form-control" title="Bday">
+                        <small class="text-muted">Enter your birthday</small>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Date Of Joining :</label>
+                        <input type="date" name="joiningDateInput" class="form-control" title="DOJ">
+                        <small class="text-muted">Enter your Date Of Joining</small>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Languages Known :</label>
+                        <input type="text" name="languagesInput" class="form-control" id="languagesInput" title="Enter languages you know" placeholder="E.g., English, Spanish, French, etc.">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Hobbies :</label>
+                        <input type="text" name="hobbiesInput" class="form-control" id="hobbiesInput" title="Enter your hobbies" placeholder="E.g., Reading, Painting, Cycling, etc.">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Skills :</label>
+                        <input type="text" name="skillsInput" class="form-control" id="skillsInput" title="Enter your skills" placeholder="E.g., Web Development, Design, Marketing, etc.">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">T-Shirt Size :</label>
+                        <input type="text" name="tShirtSizeInput" class="form-control" title="T-Shirt Size" placeholder="Enter T-Shirt Size">
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-dark" style="font-weight:bold;">Recent Praises :</label>
+                        <input type="text" name="recentPraisesInput" class="form-control" title="Recent Praises" placeholder="Enter Recent Praises">
+
+                    </div>
+                    
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+  
+      </div></body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_10_copy_2" data-name="Layer 10 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.29 11.06">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #304151;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .31px;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="m8.46,8.33v2.35c0,.18-.13.32-.32.32-.17,0-.3-.13-.3-.32v-2.35"/>
+  <path class="cls-2" d="m7.84,6.33V.38c0-.18.13-.32.3-.32.18,0,.32.13.32.32v5.95"/>
+  <rect class="cls-1" x="7.09" y="6.28" width="2.1" height="2.1" rx="1.05" ry="1.05"/>
+  <path class="cls-2" d="m10.84,2.58V.38c0-.18.15-.32.32-.32s.3.13.3.32v2.2"/>
+  <path class="cls-2" d="m11.46,4.58l.02,6.1c0,.18-.15.32-.32.32s-.32-.13-.32-.32v-6.1"/>
+  <rect class="cls-1" x="10.11" y="2.53" width="2.1" height="2.1" rx="1.05" ry="1.05"/>
+  <path class="cls-2" d="m4.82,2.58V.38c0-.18.15-.32.32-.32s.3.13.3.32v2.2"/>
+  <path class="cls-2" d="m5.43,4.58l.02,6.1c0,.18-.15.32-.32.32s-.32-.13-.32-.32v-6.1"/>
+  <rect class="cls-1" x="4.08" y="2.53" width="2.1" height="2.1" rx="1.05" ry="1.05"/>
+</svg>

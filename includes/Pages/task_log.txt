@@ -1,0 +1,2 @@
+2023-12-01 23:42:20,218 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\ll.sql","schedule_frequency":"weekly","scheduled_datetime":"2023-12-07 06:05"}
+2023-12-01 23:44:16,170 - Raw request data: {"export_path":"C:\\Users\\vishnu\\Downloads\\hh.sql","schedule_frequency":"daily","scheduled_datetime":"23:46"}

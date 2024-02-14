@@ -1,0 +1,31 @@
+2023-12-01 22:40:57,277 -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-12-01 22:40:57,277 -  * Running on http://192.168.29.54:8000/ (Press CTRL+C to quit)
+2023-12-01 22:41:02,761 - 192.168.29.54 - - [01/Dec/2023 22:41:02] "OPTIONS /receive_task HTTP/1.1" 200 -
+2023-12-01 22:41:02,773 - Raw request data: b'{"export_path":"C:\\\\Users\\\\vishnu\\\\Downloads\\\\radha.sql","schedule_frequency":"every_min","scheduled_datetime":"2023-12-01 22:42"}'
+2023-12-01 22:41:02,773 - Received Task - Export Path: C:\Users\vishnu\Downloads\radha.sql, Schedule Frequency: every_min, Scheduled Datetime: 2023-12-01 22:42
+2023-12-01 22:41:02,773 - Scheduled Job: Job(interval=1, unit=minutes, do=run_task, args=('C:\\Users\\vishnu\\Downloads\\radha.sql',), kwargs={})
+2023-12-01 22:41:02,773 - 192.168.29.54 - - [01/Dec/2023 22:41:02] "POST /receive_task HTTP/1.1" 200 -
+2023-12-01 22:42:20,106 - Raw request data: b''
+2023-12-01 22:42:20,106 - 192.168.29.54 - - [01/Dec/2023 22:42:20] "[31m[1mGET /receive_task HTTP/1.1[0m" 400 -
+2023-12-01 22:44:02,989 - 192.168.29.54 - - [01/Dec/2023 22:44:02] "OPTIONS /receive_task HTTP/1.1" 200 -
+2023-12-01 22:44:02,997 - Raw request data: b'{"export_path":"C:\\\\Users\\\\vishnu\\\\Downloads\\\\vyju.sql","schedule_frequency":"every_min","scheduled_datetime":"2023-12-01 22:45"}'
+2023-12-01 22:44:03,001 - Received Task - Export Path: C:\Users\vishnu\Downloads\vyju.sql, Schedule Frequency: every_min, Scheduled Datetime: 2023-12-01 22:45
+2023-12-01 22:44:03,001 - Scheduled Job: Job(interval=1, unit=minutes, do=run_task, args=('C:\\Users\\vishnu\\Downloads\\radha.sql',), kwargs={})
+2023-12-01 22:44:03,001 - Scheduled Job: Job(interval=1, unit=minutes, do=run_task, args=('C:\\Users\\vishnu\\Downloads\\vyju.sql',), kwargs={})
+2023-12-01 22:44:03,001 - 192.168.29.54 - - [01/Dec/2023 22:44:03] "POST /receive_task HTTP/1.1" 200 -
+2023-12-01 22:45:06,271 - Executing run_task function
+2023-12-01 22:45:10,765 -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-12-01 22:45:10,765 -  * Running on http://192.168.29.54:8000/ (Press CTRL+C to quit)
+2023-12-01 22:45:40,775 - 192.168.29.54 - - [01/Dec/2023 22:45:40] "OPTIONS /receive_task HTTP/1.1" 200 -
+2023-12-01 22:45:40,775 - Raw request data: b'{"export_path":"C:\\\\Users\\\\vishnu\\\\Downloads\\\\vyju.sql","schedule_frequency":"every_min","scheduled_datetime":"2023-12-01 22:45"}'
+2023-12-01 22:45:40,775 - Received Task - Export Path: C:\Users\vishnu\Downloads\vyju.sql, Schedule Frequency: every_min, Scheduled Datetime: 2023-12-01 22:45
+2023-12-01 22:45:40,775 - Scheduled Job: Job(interval=1, unit=minutes, do=run_task, args=('C:\\Users\\vishnu\\Downloads\\vyju.sql',), kwargs={})
+2023-12-01 22:45:40,775 - 192.168.29.54 - - [01/Dec/2023 22:45:40] "POST /receive_task HTTP/1.1" 200 -
+2023-12-01 22:49:01,595 - Executing run_task function
+2023-12-01 22:49:06,753 -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-12-01 22:49:06,753 -  * Running on http://192.168.29.54:8000/ (Press CTRL+C to quit)
+2023-12-01 22:49:46,541 - 192.168.29.54 - - [01/Dec/2023 22:49:46] "[31m[1mGET /receive_task HTTP/1.1[0m" 405 -
+2023-12-01 22:49:46,589 - 192.168.29.54 - - [01/Dec/2023 22:49:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

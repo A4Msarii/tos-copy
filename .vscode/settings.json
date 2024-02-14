@@ -1,0 +1,6 @@
+{
+    "php-intellisense.trace.server": "verbose",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
+}
